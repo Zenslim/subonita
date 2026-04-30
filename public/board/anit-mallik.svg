@@ -1,0 +1,10 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="1400" fill="#F3EEE7"/>
+<rect x="72" y="72" width="1056" height="1256" rx="40" fill="#FFFFFF" stroke="#D9D0C3" stroke-width="2"/>
+<circle cx="600" cy="480" r="210" fill="#F7F2EC" stroke="#C6BEB1" stroke-width="8"/>
+<circle cx="600" cy="430" r="84" fill="#B71C1C" fill-opacity="0.12"/>
+<path d="M340 865C340 720.972 456.972 604 601 604C745.028 604 862 720.972 862 865V918H340V865Z" fill="#B71C1C" fill-opacity="0.12"/>
+<text x="600" y="454" text-anchor="middle" fill="#7F1D1D" font-size="86" font-family="Arial, Helvetica, sans-serif" font-weight="700">AM</text>
+<text x="600" y="1038" text-anchor="middle" fill="#1C1712" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">Anit Mallik</text>
+<text x="600" y="1088" text-anchor="middle" fill="#7A6A58" font-size="20" font-family="Arial, Helvetica, sans-serif" letter-spacing="4">SUBONITA FOUNDATION</text>
+</svg>

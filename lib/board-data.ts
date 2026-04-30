@@ -1,0 +1,52 @@
+export const boardMembers = [
+  {
+    slug: 'anita-mallik',
+    name: 'Anita Mallik',
+    role: 'President (USA)',
+    image: '/board/anita-mallik.jpg',
+    bio: `Co-founder of Subonita Foundation. Leads strategic direction and global coordination.`,
+  },
+  {
+    slug: 'subodh-mallik',
+    name: 'Dr. Subodh Kumar Mallik',
+    role: 'Vice President (USA)',
+    image: '/board/subodh-mallik.jpg',
+    bio: `Founder driving the Trauma Hub vision inspired by a life-saving trauma care experience.`,
+    press: 'https://globalwhoiswho.com/philanthropy-is-in-my-heart-dr-subodh-k-mallik/',
+  },
+  {
+    slug: 'heem-shakya',
+    name: 'Heem Sunder Shakya',
+    role: 'President (Nepal)',
+    image: '/board/heem-shakya.jpg',
+    bio: `Leads Nepal operations and coordination with local institutions.`,
+  },
+  {
+    slug: 'mritunjaya-shrestha',
+    name: 'Dr. Mritunjaya Shrestha',
+    role: 'Member',
+    image: '/board/mritunjaya-shrestha.jpg',
+    bio: `Supports clinical and strategic advisory.`,
+  },
+  {
+    slug: 'bhupendra-shakya',
+    name: 'Bhupendra B. Shakya',
+    role: 'Member',
+    image: '/board/bhupendra-shakya.jpg',
+    bio: `Supports operational coordination.`,
+  },
+  {
+    slug: 'deependra-pradhan',
+    name: 'Deependra B. Pradhan',
+    role: 'Member',
+    image: '/board/deependra-pradhan.jpg',
+    bio: `Supports institutional and project execution.`,
+  },
+  {
+    slug: 'rambalak-shah',
+    name: 'RamBalak Shah',
+    role: 'Treasurer',
+    image: '/board/rambalak-shah.jpg',
+    bio: `Manages financial oversight and compliance.`,
+  },
+]
