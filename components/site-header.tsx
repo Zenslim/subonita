@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { navItems } from "@/lib/site-data";
@@ -30,6 +30,19 @@ export function SiteHeader() {
   const toggleSubmenu = (key: MobileSubmenuKey) => {
     setOpenSubmenu((prev) => (prev === key ? null : key));
   };
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) {
+      document.body.style.overflow = "";
+      return;
+    }
+
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/10 bg-sand/95 backdrop-blur">
@@ -63,7 +76,7 @@ export function SiteHeader() {
         </div>
 
         {isMobileMenuOpen && (
-          <nav className="mt-4 rounded-md border border-black/10 bg-sand p-3 shadow-md md:hidden">
+          <nav className="fixed inset-x-0 top-[89px] z-50 mx-4 rounded-md border border-black/10 bg-sand p-3 shadow-md md:hidden">
             <ul className="space-y-1">
               {navItems.map((item) => {
                 const isAbout = item.href === "/about";
