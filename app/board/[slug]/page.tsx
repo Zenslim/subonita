@@ -2,8 +2,16 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { boardMembers } from '@/lib/board-data'
 
-export default function MemberPage({ params }: { params: { slug: string } }) {
-  const member = boardMembers.find((m) => m.slug === params.slug)
+// 1. Make the function 'async'
+export default async function MemberPage({ 
+  params 
+}: { 
+  params: Promise<{ slug: string }> // 2. Change params to a Promise
+}) {
+  // 3. Await the params before using the slug
+  const { slug } = await params
+  
+  const member = boardMembers.find((m) => m.slug === slug)
 
   if (!member) return notFound()
 
@@ -27,6 +35,7 @@ export default function MemberPage({ params }: { params: { slug: string } }) {
         <a
           href={member.press}
           target="_blank"
+          rel="noopener noreferrer"
           className="text-blue-600 underline"
         >
           View Press Profile
